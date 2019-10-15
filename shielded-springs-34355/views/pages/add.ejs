@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="stylesheets/tokimon.css">
+    <script type="text/javascript" src="js/tokimon.js"></script>
+    <meta charset="utf-8">
+
+  </head>
+
+        <body style="margin: 0;">
+          <div id="header-div">
+          </div>
+
+          <header style="margin: 150;">
+
+            <div class="tab">
+            <form action="/" method="get">
+                <button id="b1" class="tabs" type="submit">Back</button>
+            </form>
+            </div>
+
+                <h1>Add a New Entry</h1>
+                <h2>You can add a new Tokimon to the TokiDex here.</h2>
+
+
+                      <form action="/add/submit" method="post">
+
+                      <label class="labelGreen">Tokimon Name:</label>
+                        <input type="text" id="tmName" name="tmName" class="tboxes"><br><br>
+                      <label class="labelGreen">Tokimon Weight:</label>
+                        <input type="text" id="tmWeight" name="tmWeight" class="tboxes"><br><br>
+                      <label class="labelGreen">Tokimon Height:</label>
+                        <input type="text" id="tmHeight" name="tmHeight" class="tboxes"><br><br>
+
+
+                      <label class="labelc1">Fly:</label>
+                        <input type="range" id="flyVal" name="flyRange" min="0" max="100" value="0" oninput="this.form.flyInput.value=this.value" />
+                        <input type="number" id="flyVal" name="flyInput" min="0" max="100" value="0" oninput="this.form.flyRange.value=this.value" /><br><br>
+
+                      <label class="labelc2">Fight:</label>
+                        <input type="range" id="fightVal" name="fightRange" min="0" max="100" value="0" oninput="this.form.fightInput.value=this.value" />
+                        <input type="number" id="fightVal" name="fightInput" min="0" max="100" value="0" oninput="this.form.fightRange.value=this.value" /><br><br>
+
+                      <label class="labelc3">Fire:</label>
+                        <input type="range" id="fireVal" name="fireRange" min="0" max="100" value="0" oninput="this.form.fireInput.value=this.value" />
+                        <input type="number" id="fireVal" name="fireInput" min="0" max="100" value="0" oninput="this.form.fireRange.value=this.value" /><br><br>
+
+                      <label class="labelc4">Water:</label>
+                        <input type="range" id="waterVal" name="waterRange" min="0" max="100" value="0" oninput="this.form.waterInput.value=this.value" />
+                        <input type="number" id="waterVal" name="waterInput" min="0" max="100" value="0" oninput="this.form.waterRange.value=this.value" /><br><br>
+
+                      <label class="labelc5">Electric:</label>
+                        <input type="range" id="elecVal" name="elecRange" min="0" max="100" value="0" oninput="this.form.elecInput.value=this.value" />
+                        <input type="number" id="elecVal" name="elecInput" min="0" max="100" value="0" oninput="this.form.elecRange.value=this.value" /><br><br>
+
+                      <label class="labelc6">Ice:</label>
+                        <input type="range" id="iceVal" name="iceRange" min="0" max="100" value="0" oninput="this.form.iceInput.value=this.value" />
+                        <input type="number" id="iceVal" name="iceInput" min="0" max="100" value="0" oninput="this.form.iceRange.value=this.value" /><br><br>
+
+                      <label class="labelGreen">Trainer Name:</label>
+                          <input type="text" id="tmTrainer" name="tmTrainer" class="tboxes"><br><br>
+
+                      <label class="labelGreen">Creature Type:</label>
+                              <select id="cType">
+                              <option value="Beast">Beast</option>
+                              <option value="Bird">Bird</option>
+                              <option value="Bug">Bug</option>
+                              <option value="Fish">Fish</option>
+                              <option value="Ghost">Ghost</option>
+                              <option value="Monster">Monster</option>
+                              <option value="Mystic">Mystic</option>
+                              <option value="Undead">Undead</option>
+                              </select>
+
+                      <br><br><label class="labelGreen">Alignment:</label>
+                      <select id="align1">
+                      <option value="Lawful ">Lawful</option>
+                      <option value="Neutral ">Neutral</option>
+                      <option value="Chaotic ">Chaotic</option>
+                      </select>
+
+                      <select id="align2">
+                      <option value="Good">Good</option>
+                      <option value="Neutral">Neutral</option>
+                      <option value="Evil">Evil</option>
+                    </select><br><br>
+
+                          <button name="submit" id="addbutton" class="submitButton" type="submit">Submit</button><br>
+                          <h3>couldn't get the database to work so don't expect any of the buttons to do anything</h3>
+
+                    </form>
+
+          </header>
+
+          <footer id="site-footer">
+          </footer>
+
+        </body>
+      </html>
